@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row">
+    <section class="p-4">
+      {{status}}
+      <div>
+        <h1>{{h1}}</h1>
+      </div>
+      <div class="border rounded">
+        <form method="POST" class="row p-4 col-12" enctype="multipart/form-data">
+          <div class="col-md-12 form__input-group">
+            <label for="nome" class="form-label">Titulo</label>
+            <input type="nome" value="{{titulo}}" name="titulo" class="form-control" id="titulo">
+          </div>
+          <div class="col-md-6 form__input-group">
+            <label for="text" class="form-label">Subtítulo</label>
+            <input type="text" value="{{subtitulo}}" name="subtitulo" class="form-control" id="subtitulo">
+          </div>
+          <div class="col-12 form__input-group">
+            <label for="noticia" class="form-label">Notícia</label>
+            <textarea class="form-control" name="noticia" id="" cols="30" rows="10">{{noticia}}</textarea>
+          </div>
+          <div class="col-12 form__input-group {{desabilitarMidia}}">
+            <label for="fotoCapa" class="form-label">Foto de capa</label>
+            <input type="file" name="fotoCapa" accept="image/*" class="form-control" id="fotoCapa">
+            {{imgFotoCapa}}
+          </div>
+          <div class="col-12 form__input-group {{desabilitarMidia}}">
+            <label for="midias" class="form-label">Mídias</label>
+            <input multiple type="file" name="midias[]" accept="image/*" class="form-control" id="midias">
+          </div>
+          <div class="col-12 form__input-group d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+</div>

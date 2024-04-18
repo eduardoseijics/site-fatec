@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row">
+    <section class="p-4">
+      {{status}}
+      <div>
+        <h1>Editar usuario</h1>
+      </div>
+      <div class="border rounded">
+        <form method="POST" class="row p-4 col-12">
+          <div class="col-md-12 form__input-group">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="nome" value="{{nome}}" name="nome" class="form-control" id="nome">
+          </div>
+          <div class="col-md-6 form__input-group">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" value={{email}} name="email" class="form-control" id="email">
+          </div>
+          <div class="col-4 form__input-group">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="18 988888888">
+          </div>
+          <div class="col-md-4 form__input-group">
+            <label for="tipo" class="form-label">Tipo usuario</label>
+            {{selectTipo}}
+          </div>
+          <div class="col-12 form__input-group d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>      
+  </div>
+</div>

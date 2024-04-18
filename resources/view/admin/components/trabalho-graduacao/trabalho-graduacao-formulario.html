@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row">
+    <section class="p-4">
+      {{status}}
+      <div>
+        <h1>Trabalho de graduacao</h1>
+      </div>
+      <div class="border rounded">
+        <form method="POST" class="row p-4 col-12">
+          <div class="col-md-12 form__input-group">
+            <label for="nome" class="form-label">Titulo</label>
+            <input type="text" value="{{titulo}}" name="nome" class="form-control" id="nome">
+          </div>
+          <div class="col-md-6 form__input-group">
+            <label for="email" class="form-label">Descricao</label>
+            <textarea type="email" name="email" class="form-control" id="email">{{descricao}}</textarea>
+          </div>
+          <div class="col-4 form__input-group">
+            <label for="telefone" class="form-label">Aluno 1</label>
+            <input type="text" class="form-control" value="{{alunoUm}}" name="aluno_um" id="aluno1">
+          </div>          
+          <div class="col-4 form__input-group">
+            <label for="aluno2" class="form-label">Aluno 2</label>
+            <input type="text" class="form-control" value="{{alunoDois}}" name="aluno_dois" id="aluno2">
+          </div>
+          <div class="col-12 form__input-group d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>      
+  </div>
+</div>

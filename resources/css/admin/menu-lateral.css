@@ -1,0 +1,27 @@
+.menu-lateral {
+  background: #1f262d;
+  max-width: 250px;
+  width: 100%;
+}
+
+.sidebar-nav ul {
+  padding-left: 0;
+}
+
+.sidebar-nav li a{
+  color: #FFF;
+  padding: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  opacity: .6;
+}
+
+.sidebar-nav li:hover a {
+  opacity: 1;
+}
+
+.sidebar-nav li span {
+  padding-left: 10px;
+  font-weight: 700;
+}

@@ -1,0 +1,45 @@
+.header {
+  background: #141619;
+  display: flex;
+}
+
+.header-logo {
+  max-width: 250px;
+  width: 100%;
+  padding: 0 20px;
+  background: #1f262d;
+}
+
+.header-logo img {
+  max-width: 150px;
+  width: 100%;
+}
+
+.header-nav__nome {
+  margin-right: 10px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.header-nav__logout {
+  line-height: 1;
+  color: #FFF;
+  opacity: .6;
+  text-decoration: none;
+  display: flex;
+}
+
+.header-nav__logout:hover {
+  opacity: 1;
+  color: #FFF;
+}
+
+.header-nav__icon--logout {
+  font-size: 26px;
+}

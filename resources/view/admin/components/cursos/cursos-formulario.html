@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row">
+    <section class="p-4">
+      {{status}}
+      <div>
+        <h1>{{h1}}</h1>
+      </div>
+      <div class="border rounded">
+        <form method="POST" class="row p-4 col-12" enctype="multipart/form-data">
+          <div class="col-md-12 form__input-group">
+            <label for="nome" class="form-label"><h2>Calendário</h2></label>
+            <input type="file" name="calendario" class="form-control" id="calendario">
+            <iframe src="{{URL}}/upload/pdf/cursos/calendario/{{curso}}/calendario-{{curso}}.pdf" frameborder="0"></iframe>
+          </div>
+          <div class="col-md-12 form__input-group">
+            <label for="text" class="form-label"><h2>Horário</h2></label>
+            <input type="file" name="horario" class="form-control" id="horario">
+            <iframe src="{{URL}}/upload/pdf/cursos/horario/{{curso}}/horario-{{curso}}.pdf" frameborder="0"></iframe>
+          </div>        
+          <div class="col-12 form__input-group d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <link rel="stylesheet" href="{{URL}}/resources/css/admin/bootstrap.min.css">
+    <link rel="stylesheet" href="{{URL}}/resources/css/admin/styles.css">
+    <link rel="stylesheet" href="{{URL}}/resources/css/admin/login.css">   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fatec Araçatuba - Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo d-none d-sm-block">
+        <a href="{{URL}}">
+          <img src="{{URL}}/resources/img/logo-fatec.png" alt="Fatec Aracatuba">
+        </a>
+      </div>
+    </header>
+
+    <div class="login-page">
+      <div class="container">
+        <form method="POST">
+          {{status}}
+          <h1 class="fw-bold">Faça o login</h1>
+
+          <div class="field-group">
+            <h4 class="fw-bold">Email</h4>
+            <input name="email" id="user-email" class="user-email" type="email" placeholder="Informe seu email" />
+          </div>
+          <div class="field-group">
+            <h4 class="fw-bold">Senha</h4>
+            <input name="senha" id="user-password" class="user-password" type="password" placeholder="Informe sua senha"/>
+          </div>
+
+          <div class="field-group">
+            <button id="user-sign-in" class="user-sign-in fw-bold" type="submit" value="Entrar">Entrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

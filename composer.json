@@ -1,0 +1,14 @@
+{
+    "name": "fatec/institucional",
+    "description": "Site da Fatec Araçatuba",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alunos e professores da Fatec Araçatuba"
+        }
+    ]
+}
