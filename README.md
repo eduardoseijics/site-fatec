@@ -25,3 +25,8 @@
 
 **Criar banco de dados**
 * Crie o banco de dados com a collate `utf8_general_ci` e execute o arquivo .sql presente na raiz do projeto para criar as tabelas do mesmo
+
+* ## ✨ Arquitetura e tutorial
+* A arquitetura do projeto segue o modelo MVC (Model - View - Controller), ela foi baseada no projeto do William Costa do Canal WDev, o tutorial pode ser encontrado [aqui]( https://www.youtube.com/watch?v=TmeyoTNu748&list=PL_zkXQGHYosGQwNkMMdhRZgm4GjspTnXs)
+
+
